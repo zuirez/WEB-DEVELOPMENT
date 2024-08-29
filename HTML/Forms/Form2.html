@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <form>
+        <h1>Job Applicaiton</h1>
+
+        <label for="name">Name : </label>
+        <input type="text" id="name">
+        <br><br>
+
+        <label for="email">Email : </label>
+        <input type="email" id="email">
+        <br><br>
+
+        <label for="phone">Phone : </label>
+        <input type="tel" id="phone">
+        <br><br>
+
+        <label for="Upload">Resume : </label>
+        <input type="file" name="Chose File" id="Upload">
+        <br><br>
+
+        <label for="experience">Experience (years) : </label>
+        <input type="number" name="experience" id="experience" min="0" max="50">
+        <br><br>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <input type="checkbox" id="html">
+            <label for="html">HTML</label>
+            <br><br>
+
+            <input type="checkbox" id="css">
+            <label for="css">CSS</label>
+            <br><br>
+
+            <input type="checkbox" id="javascript">
+            <label for="javascript">Java Script</label>
+            <br><br>
+        </fieldset>
+        <br>
+
+        <label for="highesteducation">Highest Education : </label>
+        <select name="highesteducation" id="highesteducation">
+            <option value="high school">High School</option>
+            <option value="Associate's Degree">Associate's Degree</option>
+            <option value="Bachelor's Degree">Bachalor's Degree</option>
+            <option value="Master's Degree">Master's Degree</option>
+            <option value="PhD">PhD</option>
+        </select>
+        <br><br>
+
+        <label for="availability">Availability : </label>
+        <br><br>
+
+        <input type="radio" id="Part Time" name="availability">
+        <label for="Part Time">Part Time</label>
+        <br><br>
+
+        <input type="radio" id="Full Time" name="availability">
+        <label for="Full Time">Full Time</label>
+        <br><br>
+
+        <label for="additionalComments">Additional Comments : </label><br><br>
+        <textarea name="additionalComments" id="additionalComments" ></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit Applicaiton">
+    </form>
+</body>
+</html>
