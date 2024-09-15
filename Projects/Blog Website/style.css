@@ -1,0 +1,132 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    max-width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+
+.header h1
+{
+    text-align: center;
+    font-size: 42px;
+    font-family: "Archivo Black", sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.header p
+{
+    max-width: 560px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    color: rgb(218, 218, 218);
+}
+
+.cardContainer
+{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 0fr);
+    padding: 0rem 15rem;
+}
+
+.card
+{
+    width: 20rem;
+    background-color: rgba(241, 241, 250, 0.712);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.card:hover .cardImg
+{
+    transform: scale(1.2);
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+.cardImgContainer
+{
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+
+.cardImg
+{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.cardText h1
+{
+    padding: 15px;
+    font-size: 20px;
+}
+
+.cardText h1:hover
+{
+    color: blue;
+}
+
+.cardText p
+{
+    padding: 0px 15px 5px 15px;
+    font-size: 14px;
+    color: rgb(109, 108, 108);
+}
+
+.cardFooter
+{
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardFooter img
+{
+    height: 30px;
+    width: 30px;
+    border: 0.5px solid rgb(121, 120, 120);
+    border-radius: 25px;
+    background-color: rgb(226, 226, 226);
+}
+
+.autherContent
+{
+    display: flex;
+    align-items: center;
+}
+
+.cardFooterText
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.cardFooterButton
+{
+    padding: 10px;
+    border: 1px solid rgb(170, 170, 170);
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+}
