@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
 
-
 :root {
     --primary-color: #6366F1;
     --accent-color: #3f83f8;
@@ -11,6 +10,9 @@
     --gray: #808080;
     --dark-gray: #555;
 }
+
+
+/* Global Declaration */
 
 * {
     margin: 0;
@@ -26,6 +28,12 @@
     background-color: var(--background-color);
     padding: 0.1rem;
 }
+
+
+
+
+
+/* Header Content */
 
 .headerContent
 {
@@ -56,6 +64,12 @@
     font-weight: bold;
     color: var(--text-color);
 }
+
+
+
+
+
+/* Navigation */
 
 .navButtons
 {
@@ -264,7 +278,9 @@
 }
 
 
+
 /* Hero Section Responsive */
+
 @media screen and (max-width: 800px) 
 {
     .heroSection
@@ -323,15 +339,15 @@
 
 
 
-
 /* Company Container */
+
 .companyContainer
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 2rem;
+    padding-top: 1rem;
     animation: up 1s ease forwards;
 }
 
@@ -346,7 +362,6 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 3.6rem;
-    padding: 1rem;
     background-color: var(--light-gray);
     border: none;
     border-radius: 0.625rem;
@@ -374,6 +389,10 @@
     color: #999999;
 }
 
+
+
+/* Company Container Responsive */
+
 @media screen and (max-width: 725px) 
 {
     .box
@@ -396,6 +415,10 @@
     }
 }
 
+
+
+/* Company Container Animation */
+
 @keyframes up
 {
     0%
@@ -409,4 +432,367 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+
+
+
+/* Feature Content */
+
+.featureContainer
+{
+    height: 100vh;
+    background-color: var(--light-gray);
+}
+
+.fContent
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.fText
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.2rem;
+    gap: 1.1rem;
+}
+
+.fTextTitle
+{
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.fTextP
+{
+    color: var(--gray);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fBoxes
+{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.fBoxContent
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.fBoxImg
+{
+    display: flex;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: var(--background-color);
+    border-radius: 10rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.fInfo
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--background-color);
+}
+
+.fBoxTitle
+{
+    font-size: 0.9rem;
+}
+
+
+
+
+/* Feature boxes background color and box shadow */
+
+.fBoxContent:nth-child(1)
+{
+    background-color: #4a91e2;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.fBoxContent:nth-child(2)
+{
+    background-color: #FF6289;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.fBoxContent:nth-child(3)
+{
+    background-color: #fcbf58;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.fBoxContent:nth-child(4)
+{
+    background-color: #44bfc3;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.fBoxContent:nth-child(5)
+{
+    background-color: #77b05d;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.fBoxContent:nth-child(6)
+{
+    background-color: #7d78b1;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+
+
+
+/* Feature boxes hover effects */
+
+.fBoxContent:nth-child(1):hover
+{
+    background-color: #3786da;
+    scale: 1.02;
+}
+
+.fBoxContent:nth-child(2):hover
+{
+    background-color: #f55079;
+    scale: 1.02;
+}
+
+.fBoxContent:nth-child(3):hover
+{
+    background-color: #f8b23a;
+    scale: 1.02;
+}
+
+.fBoxContent:nth-child(4):hover
+{
+    background-color: #3ec9ce;
+    scale: 1.02;
+}
+
+.fBoxContent:nth-child(5):hover
+{
+    background-color: #70bd4c;
+    scale: 1.02;
+}
+
+.fBoxContent:nth-child(6):hover
+{
+    background-color: #867fcf;
+    scale: 1.02;
+}
+
+
+
+/* Feature boxes responsive */
+
+@media screen and (max-width: 800px) 
+{
+    .fBoxes
+    {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
+        padding: 1.5rem;
+    }    
+}
+
+
+
+
+
+/* review section */
+
+.review
+{
+    background-color: var(--background-color);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1280px;
+    text-align: center;
+}
+
+.reviewText
+{
+    font-size: 1.9rem;
+    padding-bottom: 2rem;
+}
+
+.reviewBoxes
+{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.reviewBoxContent
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gray);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reviewBoxContent:hover{
+    transform: scale(1.04);;
+    border: 1px solid blue;
+}
+
+.reviewContent
+{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.rBoxReview
+{
+    font-size: 0.94rem;
+    color: var(--text-color);
+    padding-bottom: 1rem;
+}
+
+.reviewerImg
+{   
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 100rem;
+    margin-bottom: 1rem;
+}
+
+.reviewerName
+{
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 900;
+    padding-bottom: 0.5rem;
+}
+
+.reviewerOccupation
+{
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+/* Update */
+
+.update
+{
+    background-color: var(--background-color);
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.updateContent
+{
+    display: flex;
+    flex-direction: row;
+    max-width: 1280px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: var(--light-gray);
+}
+
+.updateImg
+{
+    height: 24rem;
+    width: 50%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.updateText
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.uHeadH
+{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.uHeadP
+{
+    font-size: 1rem;
+    color: var(--gray);
+    padding: 0.2rem 0rem;
+    padding-bottom: 1.5rem;
+}
+
+.uEmailButtons
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    padding-bottom: 2rem;
+}
+
+.uMailBox
+{
+    border-radius: 0.25rem;
+    border: 0.25px solid rgb(206, 206, 206);
+    padding: 0.45rem 1rem;
+}
+
+.uSendButton
+{
+    background-color: var(--primary-color);
+    padding: 0.45rem 1.2rem;
+    color: var(--background-color);
+    border-radius: 0.25rem;
+}
+
+.uSendButton:hover
+{
+    background-color: var(--link-color);
+}
+
+.uTerm
+{
+    font-size: 0.8rem;
+    max-width: 20rem;
+    color: var(--gray);
 }
