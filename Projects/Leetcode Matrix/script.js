@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function()
 
     async function fetchUserDetails(username) 
     {
-
         try
         {
             searchButton.textContent = "Searching...";
@@ -81,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function()
         }
     }
 
-    
+
     searchButton.addEventListener('click', function() 
     {
         const username = usernameInput.value;
