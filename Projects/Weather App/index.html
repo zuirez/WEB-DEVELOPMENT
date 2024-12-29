@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Developed by Rashed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <div class="circleBack"></div>
+        <div class="boxBack1"></div>
+        <div class="boxBack2"></div>
+        <div class="circleFront"></div>
+        <div class="circleBack1"></div>
+        <div class="circleBack2"></div>
+
+
+        <div class="container">
+            <div class="search">
+                <input type="text" id="searchBar" placeholder="Enter city name" spellcheck="false">
+                <button id="searchButton"><img src="image/search.png" alt=""></button>
+            </div>
+
+            <div class="content">
+                <div class="location">
+                    <h1>Dhaka, Bangladesh</h1>
+                </div>
+    
+                <div class="weatherImg">
+                    <img src="image/clear.gif" alt="" id="weatherImg">
+                </div>
+    
+                <div class="temperature">
+                    <h1>25°c</h1>
+                </div>
+            </div>
+    
+            <div class="stats">
+                <div class="statsVar">
+                    <img src="image/windspeed.gif" alt="" class="statsImg">
+                    <div class="statsText">
+                        <h1>Wind Speed</h1>
+                        <p class="windSpeed">5 km/h</p>
+                    </div>
+                </div>
+
+                <div class="statsVar">
+                    <img src="image/humidity.gif" alt="" class="statsImg">
+                    <div class="statsText">
+                        <h1>Humidity</h1>
+                        <p class="humidity">65%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote">
+                <h1>Smile like sun!</h1>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

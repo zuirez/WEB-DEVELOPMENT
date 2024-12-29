@@ -1,0 +1,222 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #545bff;
+}
+
+.card
+{
+    height: 500px;
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) -8px 10px 20px 1px;
+}
+
+.circleBack
+{
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    width: 90px;
+    border-radius: 10px 5px 5px 50px;
+    background-color: rgb(84,91,255);
+    position: absolute;
+    top: -7.5px;
+    right: -7.5px;
+}
+
+.circleBack1
+{
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    width: 90px;
+    border-radius: 100px 50px 100px 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0px;
+    right: 81px;
+}
+
+.circleBack2
+{
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    width: 90px;
+    border-radius: 100px 50px 100px 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 81px;
+    right: 0px;
+}
+
+.circleFront
+{
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background-color: #2a265e;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+.boxBack1
+{
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    width: 90px;
+    border-radius: 0;
+    background-color: rgb(84,91,255);
+    position: absolute;
+    top: 40px;
+    right: -50px;
+}
+
+.boxBack2
+{
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    width: 90px;
+    border-radius: 0;
+    background-color: rgb(84,91,255);
+    position: absolute;
+    top: -50px;
+    right: 40px;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+#searchBar
+{
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    border: 0;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.location
+{
+    margin-top: 51px;
+    font-size: 12px;
+}
+
+#searchButton
+{
+    height: 70px;
+    width: 70px;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 329px;
+    background-color: #e0e0e000;
+}
+
+#searchButton img
+{
+    height: 30px;
+    width: 30px;
+}
+
+.weatherImg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherImg img
+{
+    height: 180px;
+    width: 180px;
+    margin: 10px 0px;
+}
+
+.temperature
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.stats
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 15px;
+}
+
+.statsImg
+{
+    height: 60px;
+    width: 60px;
+}
+
+.statsText h1
+{
+    font-size: 20px;
+    position: relative;
+    top: 7px;
+}
+
+.statsText p
+{
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.statsVar
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+.quote
+{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
